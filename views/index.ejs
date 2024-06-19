@@ -1,0 +1,9 @@
+<h1>Game Library</h1>
+<ul>
+  <% games.forEach(game => { %>
+    <li>
+      <%= game.title %> (<%= game.developer %>)
+      (<a href="/games/<%= game._id %>">View</a>)
+    </li>
+  <% }); %>
+</ul>
