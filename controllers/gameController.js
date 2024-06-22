@@ -1,9 +1,9 @@
 const Game = require('../models/Game');
 
-exports.getAllGames = async (req, res) => {console.log('getAllGames function called');
+exports.getAllGames = async (req, res) => {
   try {
     const games = await Game.find().exec();
-    res.render('index', { games });
+    res.render('index', { games: games });
   } catch (err) {
     console.error(err);
     res.status(500).send('Error retrieving games');
