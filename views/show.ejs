@@ -1,5 +1,26 @@
-<h1><%= game.title %> (<%= game.developer %>)</h1>
-<p>Release Date: <%= game.releaseDate %></p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Library</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Current Selected Game!</h1>
+  </header>
+
+<h2><%= game.title %> (<%= game.developer %>)</h2>
 <p>Genre: <%= game.genre %></p>
 <p>Description: <%= game.description %></p>
-<p><a href="/games/<%= game._id %>/edit">Edit</a> | <a href="/games/<%= game._id %>?_method=DELETE">Delete</a></p>
+<p><a href="/games/<%= game._id %>/edit">Edit</a></p>
+
+<footer>
+    <p>Copyright © 2024 Game Library</p>
+  </footer>
+</body>
+
+</html>
