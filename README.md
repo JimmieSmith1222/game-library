@@ -2,7 +2,7 @@
 Description: Game Library is an app that allows you to keep track of your video game collection.
 Users can add, edit, and delete games from their library as well as update them for future DLC addons, etc.
 
-User Stories:
+User Stories:<br>
 As a user, I want to be able to add a game to my library.<br>
 As a user, I want to be able to edit a game in my library.<br>
 As a user, I want to be able to delete a game from my library.<br>
